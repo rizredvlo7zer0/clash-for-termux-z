@@ -1,0 +1,61 @@
+proxies:
+  - name: hiro exp25-12
+    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
+    port: 443
+    type: vmess
+    uuid: fc71d805-17b6-49ce-9465-653a31abff62
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vip2.ultrassh.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vip2.ultrassh.my.id
+    udp: true
+  - name: nana exp25-12
+    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
+    port: 443
+    type: vless
+    uuid: 70f952f7-b7ed-44bd-9cef-4df9996bb7cd
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vip2.ultrassh.my.id
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: vip2.ultrassh.my.id
+    udp: true
+  - name: zahra exp25-12
+    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
+    port: 443
+    type: trojan
+    password: 30ed005e-c510-4021-9da0-c7999aa39595
+    skip-cert-verify: true
+    sni: vip2.ultrassh.my.id
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: vip2.ultrassh.my.id
+    udp: true
+  - name: know exp27-12
+    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
+    port: 8443
+    type: vmess
+    uuid: a0a20bed-5cc3-4ef4-ac4a-52ddd2c9a624
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg2.kuningan-vpn.my.id
+    network: ws
+    ws-opts:
+      path: /xrayws
+      headers:
+        Host: sg2.kuningan-vpn.my.id
+    udp: true
