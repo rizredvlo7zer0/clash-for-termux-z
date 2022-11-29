@@ -15,21 +15,6 @@ proxies:
       headers:
         Host: vip2.ultrassh.my.id
     udp: true
-  - name: nana exp25-12
-    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
-    port: 443
-    type: vless
-    uuid: 70f952f7-b7ed-44bd-9cef-4df9996bb7cd
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: vip2.ultrassh.my.id
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: vip2.ultrassh.my.id
-    udp: true
   - name: zahra exp25-12
     server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
     port: 443
