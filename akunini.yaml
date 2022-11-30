@@ -15,11 +15,11 @@ proxies:
       headers:
         Host: vip2.ultrassh.my.id
     udp: true
-  - name: zahra exp25-12
+  - name: inochan exp25-12
     server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
     port: 443
     type: trojan
-    password: 30ed005e-c510-4021-9da0-c7999aa39595
+    password: bdd2a81e-4996-40f6-a88a-5de37743cda1
     skip-cert-verify: true
     sni: vip2.ultrassh.my.id
     network: ws
