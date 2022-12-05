@@ -15,7 +15,7 @@ proxies:
       headers:
         Host: vip2.ultrassh.my.id
     udp: true
-  - name: vmkilua
+  - name: vmkilua exp23-12
     server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
     port: 443
     type: vmess
