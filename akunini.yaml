@@ -1,1 +1,33 @@
 proxies:
+  - name: vmkilua
+    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
+    port: 443
+    type: vmess
+    uuid: dc0b41b6-e70a-4329-b5cb-6248c5f101e4
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vip2.ultrassh.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vip2.ultrassh.my.id
+    udp: true
+  - name: hiro
+    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
+    port: 443
+    type: vmess
+    uuid: f2594719-5ce2-4fca-b5a1-ff07e65308d5
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vip2.ultrassh.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vip2.ultrassh.my.id
+    udp: true
