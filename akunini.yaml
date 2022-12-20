@@ -1,14 +1,1 @@
-proxies:
-  - name: lilulu
-    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
-    port: 443
-    type: trojan
-    password: Lilulu
-    skip-cert-verify: true
-    sni: sgdo003.iptrojan.com
-    network: ws
-    ws-opts:
-      path: /trojan-go
-      headers:
-        Host: sgdo003.iptrojan.com
-    udp: true
+
