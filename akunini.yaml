@@ -33,33 +33,33 @@ proxies:
     udp: true
   - name: razor exp19-1
     server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
-    port: 8443
+    port: 443
     type: vmess
-    uuid: 6ec620a5-657b-4e67-a2c4-d91320fec0c5
+    uuid: de8fc79b-713c-42c6-b8d7-85b622404dfe
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sg1.inet-solid.my.id
+    servername: ronal12.ridwan-vpn.me
     network: ws
     ws-opts:
-      path: /worryfree
+      path: /vmess
       headers:
-        Host: sg1.inet-solid.my.id
+        Host: ronal12.ridwan-vpn.me
     udp: true
-  - name: killua exp19-1
+  - name: kilua exp19-1
     server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
-    port: 8443
+    port: 443
     type: vmess
-    uuid: 4613e379-348a-45f8-9201-9357de937de2
+    uuid: 68e800ce-b268-47c4-8754-607bbdb70c08
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sg1.inet-solid.my.id
+    servername: ronal12.ridwan-vpn.me
     network: ws
     ws-opts:
-      path: /worryfree
+      path: /vmess
       headers:
-        Host: sg1.inet-solid.my.id
+        Host: ronal12.ridwan-vpn.me
     udp: true
