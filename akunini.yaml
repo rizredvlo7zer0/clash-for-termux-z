@@ -1,30 +1,65 @@
 proxies:
-  - name: giora0900 exp28-12
+  - name: hiro exp25-12
     server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
     port: 443
     type: vmess
-    uuid: f9e7aace-7e78-11ed-b85d-a3f1d4ec1d60
+    uuid: f2594719-5ce2-4fca-b5a1-ff07e65308d5
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: free-sg2.funny.my.id
+    servername: vip2.ultrassh.my.id
     network: ws
     ws-opts:
-      path: /vmessws
+      path: /vmess
       headers:
-        Host: free-sg2.funny.my.id
+        Host: vip2.ultrassh.my.id
     udp: true
-  - name: lolita0541 exp27-12
+  - name: vmkilua exp23-12
     server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
     port: 443
-    type: trojan
-    password: 64f1f43c-7df2-11ed-baba-2388578a8867
+    type: vmess
+    uuid: dc0b41b6-e70a-4329-b5cb-6248c5f101e4
+    alterId: 0
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    sni: free-sg1.funny.my.id
+    servername: vip2.ultrassh.my.id
     network: ws
     ws-opts:
-      path: /trojanws
+      path: /vmess
       headers:
-        Host: free-sg1.funny.my.id
+        Host: vip2.ultrassh.my.id
+    udp: true
+  - name: razor exp19-1
+    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
+    port: 8443
+    type: vmess
+    uuid: 6ec620a5-657b-4e67-a2c4-d91320fec0c5
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg1.inet-solid.my.id
+    network: ws
+    ws-opts:
+      path: /worryfree
+      headers:
+        Host: sg1.inet-solid.my.id
+    udp: true
+  - name: killua exp19-1
+    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
+    port: 8443
+    type: vmess
+    uuid: 4613e379-348a-45f8-9201-9357de937de2
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg1.inet-solid.my.id
+    network: ws
+    ws-opts:
+      path: /worryfree
+      headers:
+        Host: sg1.inet-solid.my.id
     udp: true
