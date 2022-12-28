@@ -1,33 +1,27 @@
 proxies:
-  - name: sshocean-ninoru exp4-1
-    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
+  - name: minasa
+    server: api.qiscus.com
     port: 443
-    type: vmess
-    uuid: 061f8c99-b339-4f30-b276-e2c0d6ab6f1f
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: 81f55d00-8675-11ed-859b-1239d0255272
     skip-cert-verify: true
-    servername: sg2.securev2ray.com
+    sni: sgovh-trojan.bonds.id
     network: ws
     ws-opts:
-      path: /vmess
+      path: /howdy
       headers:
-        Host: sg2.securev2ray.com
+        Host: sgovh-trojan.bonds.id
     udp: true
-  - name: sshocean-nanika exp4-1
-    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
+  - name: mimin
+    server: api.qiscus.com
     port: 443
-    type: vmess
-    uuid: b7f24890-5dfd-43dd-bf84-106bb49df112
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: f3488520-8674-11ed-bbaa-1239d0255272
     skip-cert-verify: true
-    servername: sg2.v2rayserv.com
+    sni: sgovh-trojan.bonds.id
     network: ws
     ws-opts:
-      path: /vmess
+      path: /howdy
       headers:
-        Host: sg2.v2rayserv.com
+        Host: sgovh-trojan.bonds.id
     udp: true
