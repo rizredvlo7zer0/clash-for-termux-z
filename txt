@@ -1,0 +1,52 @@
+{
+  "inbounds": [],
+  "outbounds": [
+    {
+      "mux": {
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "zossa-dcwlbzjfnjec5p4-crm.qiscus.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "id": "eadc7cf6-c81a-4819-9019-3c87bcc30bf4",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "tes.daffavpn.tech"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "tes.daffavpn.tech"
+          },
+          "path": "/vmess-tls"
+        }
+      },
+      "tag": "VMESS"
+    }
+  ],
+  "policy": {
+    "levels": {
+      "8": {
+        "connIdle": 300,
+        "downlinkOnly": 1,
+        "handshake": 4,
+        "uplinkOnly": 1
+      }
+    }
+  }
+}
