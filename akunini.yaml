@@ -1,27 +1,33 @@
 proxies:
-  - name: minasa
-    server: api.qiscus.com
+  - name: seno2601 funny.exp11-1
+    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
     port: 443
-    type: trojan
-    password: 81f55d00-8675-11ed-859b-1239d0255272
+    type: vmess
+    uuid: 920ffd9c-89a5-11ed-9970-8b753b58dff9
+    alterId: 0
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    sni: sgovh-trojan.bonds.id
+    servername: id1-biz.funny-vpn.com
     network: ws
     ws-opts:
-      path: /howdy
+      path: /vmessws
       headers:
-        Host: sgovh-trojan.bonds.id
+        Host: id1-biz.funny-vpn.com
     udp: true
-  - name: mimin
-    server: api.qiscus.com
+  - name: dino2121 funny.exp11-1
+    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
     port: 443
-    type: trojan
-    password: f3488520-8674-11ed-bbaa-1239d0255272
+    type: vmess
+    uuid: ece8f4f4-89a4-11ed-ba57-3b473e91dd1e
+    alterId: 0
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    sni: sgovh-trojan.bonds.id
+    servername: id1-biz.funny-vpn.com
     network: ws
     ws-opts:
-      path: /howdy
+      path: /vmessws
       headers:
-        Host: sgovh-trojan.bonds.id
+        Host: id1-biz.funny-vpn.com
     udp: true
