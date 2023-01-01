@@ -1,33 +1,33 @@
 proxies:
-  - name: seno2601 funny.exp11-1
-    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
+  - name: hidan exp31-1
+    server: api.qiscus.com
     port: 443
     type: vmess
-    uuid: 920ffd9c-89a5-11ed-9970-8b753b58dff9
+    uuid: db3cc4d1-5e6f-4908-b9c0-d753ad0f572d
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: id1-biz.funny-vpn.com
+    servername: vip.uhuyyvpn.my.id
     network: ws
     ws-opts:
-      path: /vmessws
+      path: /xrayws
       headers:
-        Host: id1-biz.funny-vpn.com
+        Host: vip.uhuyyvpn.my.id
     udp: true
-  - name: dino2121 funny.exp11-1
-    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
+  - name: zabusa exp31-1
+    server: api.qiscus.com
     port: 443
     type: vmess
-    uuid: ece8f4f4-89a4-11ed-ba57-3b473e91dd1e
+    uuid: 75c26521-7856-42af-8cfc-7adab64fb0b7
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: id1-biz.funny-vpn.com
+    servername: vip.uhuyyvpn.my.id
     network: ws
     ws-opts:
-      path: /vmessws
+      path: /xrayws
       headers:
-        Host: id1-biz.funny-vpn.com
+        Host: vip.uhuyyvpn.my.id
     udp: true
