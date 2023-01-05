@@ -1,1 +1,33 @@
 proxies:
+  - name: ambil1 exp30-2
+    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
+    port: 443
+    type: vmess
+    uuid: d81f050f-c5e8-4fac-9ea5-68d01811725d
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: a6m169.scvps.my.id
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: a6m169.scvps.my.id
+    udp: true
+  - name: ambil2 exp30-2
+    server: api.qiscus.com
+    port: 443
+    type: vmess
+    uuid: d81f050f-c5e8-4fac-9ea5-68d01811725d
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: a6m169.scvps.my.id
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: a6m169.scvps.my.id
+    udp: true
