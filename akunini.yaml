@@ -1,33 +1,27 @@
 proxies:
-  - name: ambil1 exp30-2
-    server: zossa-dcwlbzjfnjec5p4-crm.qiscus.com
+  - name: diola5438 funny
+    server: 172.64.149.82
     port: 443
-    type: vmess
-    uuid: d81f050f-c5e8-4fac-9ea5-68d01811725d
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: dfce9504-910f-11ed-80e4-cf55211e485f
     skip-cert-verify: true
-    servername: a6m169.scvps.my.id
+    sni: free-sg1.funny.my.id
     network: ws
     ws-opts:
-      path: /vmessws
+      path: /trojanws
       headers:
-        Host: a6m169.scvps.my.id
+        Host: free-sg1.funny.my.id
     udp: true
-  - name: ambil2 exp30-2
-    server: api.qiscus.com
+  - name: ranti5438 funny
+    server: 172.64.149.82
     port: 443
-    type: vmess
-    uuid: d81f050f-c5e8-4fac-9ea5-68d01811725d
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: dfce9504-910f-11ed-80e4-cf55211e485f
     skip-cert-verify: true
-    servername: a6m169.scvps.my.id
+    sni: free-sg1.funny.my.id
     network: ws
     ws-opts:
-      path: /vmessws
+      path: /trojanws
       headers:
-        Host: a6m169.scvps.my.id
+        Host: free-sg1.funny.my.id
     udp: true
