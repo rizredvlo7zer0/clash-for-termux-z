@@ -1,1 +1,84 @@
-
+tproxy-port: 7895
+bind-address: "*"
+mode: rule
+allow-lan: true
+log-level: silent
+external-controller: 0.0.0.0:9090
+external-ui: yacd-gh-pages
+unified-delay: true
+ipv6: false
+proxies:
+proxy-providers:
+  Akun:
+    type: file
+    path: "*"
+    health-check:
+      enable: true
+      url: 'http://cp.cloudflare.com/generate_204'
+      interval: 10
+  Akunx:
+    type: file
+    path: "xx.yaml"
+    health-check:
+      enable: true
+      url: 'http://cp.cloudflare.com/generate_204'
+      interval: 9
+  Akunz:
+    type: file
+    path: "zz.yaml"
+    health-check:
+      enable: true
+      url: 'http://cp.cloudflare.com/generate_204'
+      interval: 8
+proxy-groups:
+  - name: Modz_riz✨
+    type: load-balance
+    strategy: round-robin
+    use:
+      - Akun
+  - name: Modz_riz🌠
+    type: load-balance
+    strategy: round-robin
+    use:
+      - Akunx
+  - name: Modz_riz💥
+    type: load-balance
+    strategy: round-robin
+    use:
+      - Akunz
+  - name: Modz_riz🐾
+    type: fallback
+    url: 'http://cp.cloudflare.com/generate_204'
+    interval: 3
+    proxies:
+      - Modz_riz✨
+      - Modz_riz🌠
+  - name: Modz_riz🎭
+    type: url-test
+    url: 'http://cp.cloudflare.com/generate_204'
+    interval: 3
+    tolerance: 100
+    use:
+      - Akun
+      - Akunx
+  - name: Modz_riz🌀
+    type: select
+    use:
+      - Akun
+      - Akunx
+      - Akunz
+  - name: Direct-data
+    type: select
+    proxies:
+      - DIRECT
+      - REJECT
+      - Modz_riz🐾
+rule-providers:
+    Direct:
+      type: file
+      behavior: classical
+      path: ./rule/directo.yaml
+rules:
+  - RULE-SET,Direct,Direct-data
+  - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
+  - MATCH,GLOBAL
