@@ -1,1 +1,112 @@
-.
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+ipv6: false
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: true
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  use-host: true
+  enhanced-mode: fake-ip
+  listen: 0.0.0.0:7874
+  nameserver:
+    - 8.8.8.8
+    - 1.0.0.1
+    - https://dns.google/dns-query
+  fallback:
+    - 1.1.1.1
+    - 8.8.4.4
+    - https://cloudflare-dns.com/dns-query
+    - 112.215.203.254
+  default-nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+    - 112.215.203.254
+  fake-ip-range: 198.18.0.1/16
+proxies:
+  - name: nana howdy.id
+    server: 104.18.1.196
+    port: 443
+    type: trojan
+    password: e5cbf350-1dc7-11ee-87a8-1239d0255272
+    skip-cert-verify: true
+    sni: sg-4.test3.net
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg-4.test3.net
+    udp: true
+  - name: nana howdy.id 2
+    server: 104.18.1.196
+    port: 443
+    type: trojan
+    password: e5cbf350-1dc7-11ee-87a8-1239d0255272
+    skip-cert-verify: true
+    sni: sg-4.test3.net
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg-4.test3.net
+    udp: true
+  - name: nana howdy.id 3
+    server: 104.18.1.196
+    port: 443
+    type: trojan
+    password: e5cbf350-1dc7-11ee-87a8-1239d0255272
+    skip-cert-verify: true
+    sni: sg-4.test3.net
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg-4.test3.net
+    udp: true
+proxy-groups:
+  - name: SELECTOR
+    type: select
+    url: http://hi.bonds.id/ping
+    interval: 5
+    proxies:
+      - nana howdy.id
+      - nana howdy.id 2
+      - nana howdy.id 3
+  - name: PING
+    type: url-test
+    url: http://hi.bonds.id/ping
+    interval: 5
+    proxies:
+      - nana howdy.id
+      - nana howdy.id 2
+      - nana howdy.id 3
+  - name: LOADBALANCE
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://hi.bonds.id/ping
+    interval: 5
+    proxies:
+      - nana howdy.id
+      - nana howdy.id 2
+      - nana howdy.id 3
+  - name: FALLBACK
+    type: fallback
+    url: http://hi.bonds.id/ping
+    interval: 5
+    proxies:
+      - nana howdy.id
+      - nana howdy.id 2
+      - nana howdy.id 3
+rules:
+  - MATCH,GLOBAL
